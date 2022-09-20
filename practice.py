@@ -51,6 +51,6 @@ while a != 'закрыть программу':
         interface = devices.Activate(IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
         volume = cast(interface, POINTER(IAudioEndpointVolume))
         volume.SetMasterVolumeLevel(0, None)
-    a = 0
+    a = ''
 print('Программа успешно закрыта.')
 
